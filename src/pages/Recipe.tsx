@@ -13,9 +13,7 @@ export default function Recipe() {
   const measurments = Object.keys(meal).filter((key) =>
     key.startsWith("strMeasure")
   );
-  console.log(meal);
-  console.log(ingredients);
-  console.log(recipes);
+
 
 
   return (
@@ -41,7 +39,8 @@ export default function Recipe() {
       </ul>
       <h2>Instrunctions</h2>
       <p>{meal.strInstructions}</p>
-      <iframe width="420" height="315" src={meal.strYoutube}></iframe>
+      <a href={meal.strYoutube} target="_blank">Video Recipe</a> <br />
+      <iframe width="420" height="315" src={meal.strYoutube} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
     </section>
   );
 }
