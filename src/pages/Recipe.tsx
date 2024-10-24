@@ -5,7 +5,6 @@ import { RootState } from "../store/store";
 import { Link } from "react-router-dom";
 
 export default function Recipe() {
-    const recipes = useSelector((state: RootState) => state.saved.recipes);
   const meal: Meal | any = useLoaderData();
   const ingredients = Object.keys(meal).filter((key) =>
     key.startsWith("strIngredient")
@@ -46,7 +45,7 @@ export default function Recipe() {
 }
 
 export async function loader({
-  request,
+ 
   params,
 }: LoaderFunctionArgs): Promise<Meal | null> {
   const id = params.id;
