@@ -1,7 +1,6 @@
 import { useLoaderData, LoaderFunctionArgs } from "react-router-dom";
 import { Meal } from "../interface";
-import { useSelector } from "react-redux";
-import { RootState } from "../store/store";
+
 import { Link } from "react-router-dom";
 
 export default function Recipe() {
