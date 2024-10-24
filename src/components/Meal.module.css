@@ -1,0 +1,27 @@
+.mealsGrid{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+}
+.mealsCard{
+    width: 300px;
+    min-height: 350px;
+    border: 1px solid;
+    padding: 5px;
+    color: #000;
+    text-align: center;
+}
+.mealsCard img{
+    width: 90%;
+}
+.mealsCard .title{
+    font-size: 1.2rem;
+    
+}
+.mealsCard p{
+    text-align: left;
+
+}
