@@ -22,8 +22,7 @@ export const savedSlice = createSlice({
      
       if (index === -1 && action.payload.idMeal) {
         state.recipes.push(action.payload);
-        console.log("Recipe added:", action.payload); 
-        console.log("Current state:", state.recipes);
+      
       }
     },
     deleteFromSaved: (state, action: PayloadAction<Meal>) => {
